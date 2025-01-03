@@ -11755,9 +11755,10 @@ public final class R {
     public static final int tarot_a=0x7f0700e5;
     public static final int tarot_b=0x7f0700e6;
     public static final int tarot_c=0x7f0700e7;
-    public static final int test_level_drawable=0x7f0700e8;
-    public static final int tooltip_frame_dark=0x7f0700e9;
-    public static final int tooltip_frame_light=0x7f0700ea;
+    public static final int tarotcard=0x7f0700e8;
+    public static final int test_level_drawable=0x7f0700e9;
+    public static final int tooltip_frame_dark=0x7f0700ea;
+    public static final int tooltip_frame_light=0x7f0700eb;
   }
   public static final class id {
     public static final int ALT=0x7f080000;
@@ -12497,10 +12498,10 @@ public final class R {
     public static final int support_simple_spinner_dropdown_item=0x7f0b0071;
   }
   public static final class mipmap {
-    public static final int appicon=0x7f0d0000;
-    public static final int appicon_background=0x7f0d0001;
-    public static final int appicon_foreground=0x7f0d0002;
-    public static final int appicon_round=0x7f0d0003;
+    public static final int icons=0x7f0d0000;
+    public static final int icons_background=0x7f0d0001;
+    public static final int icons_foreground=0x7f0d0002;
+    public static final int icons_round=0x7f0d0003;
   }
   public static final class plurals {
     public static final int mtrl_badge_content_description=0x7f0e0000;
