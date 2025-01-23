@@ -8,8 +8,7 @@
     Title="Test1">
 
     <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+        Title="สุ่มโชค"
+        ContentTemplate="{DataTemplate local:Page1}"/>
 
 </Shell>

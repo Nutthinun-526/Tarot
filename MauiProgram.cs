@@ -4,6 +4,8 @@ namespace Test1
 {
     public static class MauiProgram
     {
+        public static object Navigation { get; private set; }
+
         public static MauiApp CreateMauiApp()
         {
             var builder = MauiApp.CreateBuilder();

@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Test1.Page2"
+             Title="ราศี">
+    <Grid>
+        <!-- รูปภาพพื้นหลัง -->
+        <Image Source="zodiac.jpg"
+               Aspect="AspectFill"
+               Grid.RowSpan="2"
+               InputTransparent="True" />
+
+        <!-- ScrollView สำหรับเนื้อหา -->
+        <ScrollView>
+            <VerticalStackLayout Padding="20">
+                <!-- ส่วนหัว -->
+                <Label 
+                    Text="เลือกชื่อราศี"
+                    FontSize="24"
+                    HorizontalOptions="Center"
+                    Margin="0,0,0,20"
+                    TextColor="White"
+                    FontAttributes="Bold" />
+
+                <!-- ใช้ Grid สำหรับจัดเรียงปุ่ม -->
+                <Grid ColumnDefinitions="*,*" 
+                      RowDefinitions="*,*,*,*,*,*" 
+                      VerticalOptions="CenterAndExpand">
+                    <!-- ราศีเมษ -->
+                    <AbsoluteLayout Grid.Row="0" Grid.Column="0" HorizontalOptions="Center" Margin="10">
+                        <ImageButton Source="aries.png" 
+                                     HeightRequest="175" 
+                                     WidthRequest="160" 
+                                     CornerRadius="20" 
+                                     Command="{Binding ZodiacCommand}" 
+                                     CommandParameter="Aries"
+                                     BackgroundColor="#80FFFFFF"
+                                     Padding="20"
+                                     AbsoluteLayout.LayoutFlags="PositionProportional"
+                                     AbsoluteLayout.LayoutBounds="0.5, 0.5, AutoSize, AutoSize" />
+                        <Label Text="ราศีเมษ" 
+                               HorizontalTextAlignment="Center" 
+                               VerticalTextAlignment="Center"
+                               TextColor="Black" 
+                               FontSize="16"
+                               FontAttributes="Bold"
+                               AbsoluteLayout.LayoutFlags="PositionProportional"
+                               AbsoluteLayout.LayoutBounds="0.5, 0.95, AutoSize, AutoSize" />
+                    </AbsoluteLayout>
+
+                    <!-- ราศีพฤษภ -->
+                    <AbsoluteLayout Grid.Row="0" Grid.Column="1" HorizontalOptions="Center" Margin="10">
+                        <ImageButton Source="taurus.png" 
+                                     HeightRequest="175" 
+                                     WidthRequest="160" 
+                                     CornerRadius="20" 
+                                     Command="{Binding ZodiacCommand}" 
+                                     CommandParameter="Taurus"
+                                     BackgroundColor="#80FFFFFF"
+                                     Padding="20"
+                                     AbsoluteLayout.LayoutFlags="PositionProportional"
+                                     AbsoluteLayout.LayoutBounds="0.5, 0.5, AutoSize, AutoSize" />
+                        <Label Text="ราศีพฤษภ" 
+                               HorizontalTextAlignment="Center" 
+                               VerticalTextAlignment="Center"
+                               TextColor="Black" 
+                               FontSize="16"
+                               FontAttributes="Bold"
+                               AbsoluteLayout.LayoutFlags="PositionProportional"
+                               AbsoluteLayout.LayoutBounds="0.5, 0.95, AutoSize, AutoSize" />
+                    </AbsoluteLayout>
+
+                    <!-- ราศีเมถุน -->
+                    <AbsoluteLayout Grid.Row="1" Grid.Column="0" HorizontalOptions="Center" Margin="10">
+                        <ImageButton Source="gemini.png" 
+                                     HeightRequest="175" 
+                                     WidthRequest="160" 
+                                     CornerRadius="20" 
+                                     Command="{Binding ZodiacCommand}" 
+                                     CommandParameter="Gemini"
+                                     BackgroundColor="#80FFFFFF"
+                                     Padding="20"
+                                     AbsoluteLayout.LayoutFlags="PositionProportional"
+                                     AbsoluteLayout.LayoutBounds="0.5, 0.5, AutoSize, AutoSize" />
+                        <Label Text="ราศีเมถุน" 
+                               HorizontalTextAlignment="Center" 
+                               VerticalTextAlignment="Center"
+                               TextColor="Black" 
+                               FontSize="16"
+                               FontAttributes="Bold"
+                               AbsoluteLayout.LayoutFlags="PositionProportional"
+                               AbsoluteLayout.LayoutBounds="0.5, 0.95, AutoSize, AutoSize" />
+                    </AbsoluteLayout>
+
+                    <!-- ราศีกรกฎ -->
+                    <AbsoluteLayout Grid.Row="1" Grid.Column="1" HorizontalOptions="Center" Margin="10">
+                        <ImageButton Source="cancer.png" 
+                                     HeightRequest="175" 
+                                     WidthRequest="160" 
+                                     CornerRadius="20" 
+                                     Command="{Binding ZodiacCommand}" 
+                                     CommandParameter="Cancer"
+                                     BackgroundColor="#80FFFFFF"
+                                     Padding="15"
+                                     AbsoluteLayout.LayoutFlags="PositionProportional"
+                                     AbsoluteLayout.LayoutBounds="0.5, 0.5, AutoSize, AutoSize" />
+                        <Label Text="ราศีกรกฎ" 
+                               HorizontalTextAlignment="Center" 
+                               VerticalTextAlignment="Center"
+                               TextColor="Black" 
+                               FontSize="16"
+                               FontAttributes="Bold"
+                               AbsoluteLayout.LayoutFlags="PositionProportional"
+                               AbsoluteLayout.LayoutBounds="0.5, 0.95, AutoSize, AutoSize" />
+                    </AbsoluteLayout>
+
+                    <!-- ราศีสิงห์ -->
+                    <AbsoluteLayout Grid.Row="2" Grid.Column="0" HorizontalOptions="Center" Margin="10">
+                        <ImageButton Source="leo.png" 
+                                     HeightRequest="175" 
+                                     WidthRequest="160" 
+                                     CornerRadius="20" 
+                                     Command="{Binding ZodiacCommand}" 
+                                     CommandParameter="Leo"
+                                     BackgroundColor="#80FFFFFF"
+                                     Padding="30"
+                                     AbsoluteLayout.LayoutFlags="PositionProportional"
+                                     AbsoluteLayout.LayoutBounds="0.5, 0.5, AutoSize, AutoSize" />
+                        <Label Text="ราศีสิงห์" 
+                               HorizontalTextAlignment="Center" 
+                               VerticalTextAlignment="Center"
+                               TextColor="Black" 
+                               FontSize="16"
+                               FontAttributes="Bold"
+                               AbsoluteLayout.LayoutFlags="PositionProportional"
+                               AbsoluteLayout.LayoutBounds="0.5, 0.95, AutoSize, AutoSize" />
+                    </AbsoluteLayout>
+
+                    <!-- ราศีกันย์ -->
+                    <AbsoluteLayout Grid.Row="2" Grid.Column="1" HorizontalOptions="Center" Margin="10">
+                        <ImageButton Source="virgo.png" 
+                                     HeightRequest="175" 
+                                     WidthRequest="160" 
+                                     CornerRadius="20" 
+                                     Command="{Binding ZodiacCommand}" 
+                                     CommandParameter="Virgo"
+                                     BackgroundColor="#80FFFFFF"
+                                     Padding="20"
+                                     AbsoluteLayout.LayoutFlags="PositionProportional"
+                                     AbsoluteLayout.LayoutBounds="0.5, 0.5, AutoSize, AutoSize" />
+                        <Label Text="ราศีกันย์" 
+                               HorizontalTextAlignment="Center" 
+                               VerticalTextAlignment="Center"
+                               TextColor="Black" 
+                               FontSize="16"
+                               FontAttributes="Bold"
+                               AbsoluteLayout.LayoutFlags="PositionProportional"
+                               AbsoluteLayout.LayoutBounds="0.5, 0.95, AutoSize, AutoSize" />
+                    </AbsoluteLayout>
+
+                    <!-- ราศีตุลย์ -->
+                    <AbsoluteLayout Grid.Row="3" Grid.Column="0" HorizontalOptions="Center" Margin="10">
+                        <ImageButton Source="libra.png" 
+                                     HeightRequest="175" 
+                                     WidthRequest="160" 
+                                     CornerRadius="20" 
+                                     Command="{Binding ZodiacCommand}" 
+                                     CommandParameter="Libra"
+                                     BackgroundColor="#80FFFFFF"
+                                     Padding="20"
+                                     AbsoluteLayout.LayoutFlags="PositionProportional"
+                                     AbsoluteLayout.LayoutBounds="0.5, 0.5, AutoSize, AutoSize" />
+                        <Label Text="ราศีตุลย์" 
+                               HorizontalTextAlignment="Center" 
+                               VerticalTextAlignment="Center"
+                               TextColor="Black" 
+                               FontSize="16"
+                               FontAttributes="Bold"
+                               AbsoluteLayout.LayoutFlags="PositionProportional"
+                               AbsoluteLayout.LayoutBounds="0.5, 0.95, AutoSize, AutoSize" />
+                    </AbsoluteLayout>
+
+                    <!-- ราศีพิจิก -->
+                    <AbsoluteLayout Grid.Row="3" Grid.Column="1" HorizontalOptions="Center" Margin="10">
+                        <ImageButton Source="scorpio.png" 
+                                     HeightRequest="175" 
+                                     WidthRequest="160" 
+                                     CornerRadius="20" 
+                                     Command="{Binding ZodiacCommand}" 
+                                     CommandParameter="Scorpio"
+                                     BackgroundColor="#80FFFFFF"
+                                     Padding="20"
+                                     AbsoluteLayout.LayoutFlags="PositionProportional"
+                                     AbsoluteLayout.LayoutBounds="0.5, 0.5, AutoSize, AutoSize" />
+                        <Label Text="ราศีพิจิก" 
+                               HorizontalTextAlignment="Center" 
+                               VerticalTextAlignment="Center"
+                               TextColor="Black" 
+                               FontSize="16"
+                               FontAttributes="Bold"
+                               AbsoluteLayout.LayoutFlags="PositionProportional"
+                               AbsoluteLayout.LayoutBounds="0.5, 0.95, AutoSize, AutoSize" />
+                    </AbsoluteLayout>
+
+                    <!-- ราศีธนู -->
+                    <AbsoluteLayout Grid.Row="4" Grid.Column="0" HorizontalOptions="Center" Margin="10">
+                        <ImageButton Source="sagittarius.png" 
+                                     HeightRequest="175" 
+                                     WidthRequest="160" 
+                                     CornerRadius="20" 
+                                     Command="{Binding ZodiacCommand}" 
+                                     CommandParameter="Sagittarius"
+                                     BackgroundColor="#80FFFFFF"
+                                     Padding="25"
+                                     AbsoluteLayout.LayoutFlags="PositionProportional"
+                                     AbsoluteLayout.LayoutBounds="0.5, 0.5, AutoSize, AutoSize" />
+                        <Label Text="ราศีธนู" 
+                               HorizontalTextAlignment="Center" 
+                               VerticalTextAlignment="Center"
+                               TextColor="Black" 
+                               FontSize="16"
+                               FontAttributes="Bold"
+                               AbsoluteLayout.LayoutFlags="PositionProportional"
+                               AbsoluteLayout.LayoutBounds="0.5, 0.95, AutoSize, AutoSize" />
+                    </AbsoluteLayout>
+
+                    <!-- ราศีมังกร -->
+                    <AbsoluteLayout Grid.Row="4" Grid.Column="1" HorizontalOptions="Center" Margin="10">
+                        <ImageButton Source="capricorn.png" 
+                                     HeightRequest="175" 
+                                     WidthRequest="160" 
+                                     CornerRadius="20" 
+                                     Command="{Binding ZodiacCommand}" 
+                                     CommandParameter="Capricorn"
+                                     BackgroundColor="#80FFFFFF"
+                                     Padding="5"
+                                     AbsoluteLayout.LayoutFlags="PositionProportional"
+                                     AbsoluteLayout.LayoutBounds="0.5, 0.5, AutoSize, AutoSize" />
+                        <Label Text="ราศีมังกร" 
+                               HorizontalTextAlignment="Center" 
+                               VerticalTextAlignment="Center"
+                               TextColor="Black" 
+                               FontSize="16"
+                               FontAttributes="Bold"
+                               AbsoluteLayout.LayoutFlags="PositionProportional"
+                               AbsoluteLayout.LayoutBounds="0.5, 0.95, AutoSize, AutoSize" />
+                    </AbsoluteLayout>
+
+                    <!-- ราศีกุมภ์ -->
+                    <AbsoluteLayout Grid.Row="5" Grid.Column="0" HorizontalOptions="Center" Margin="10">
+                        <ImageButton Source="aquarius.png" 
+                                     HeightRequest="175" 
+                                     WidthRequest="160" 
+                                     CornerRadius="20" 
+                                     Command="{Binding ZodiacCommand}" 
+                                     CommandParameter="Aquarius"
+                                     BackgroundColor="#80FFFFFF"
+                                     Padding="10"
+                                     AbsoluteLayout.LayoutFlags="PositionProportional"
+                                     AbsoluteLayout.LayoutBounds="0.5, 0.5, AutoSize, AutoSize" />
+                        <Label Text="ราศีกุมภ์" 
+                               HorizontalTextAlignment="Center" 
+                               VerticalTextAlignment="Center"
+                               TextColor="Black" 
+                               FontSize="16"
+                               FontAttributes="Bold"
+                               AbsoluteLayout.LayoutFlags="PositionProportional"
+                               AbsoluteLayout.LayoutBounds="0.5, 0.95, AutoSize, AutoSize" />
+                    </AbsoluteLayout>
+
+                    <!-- ราศีมีน -->
+                    <AbsoluteLayout Grid.Row="5" Grid.Column="1" HorizontalOptions="Center" Margin="10">
+                        <ImageButton Source="pisces.png" 
+                                     HeightRequest="175" 
+                                     WidthRequest="160" 
+                                     CornerRadius="20" 
+                                     Command="{Binding ZodiacCommand}" 
+                                     CommandParameter="Pisces"
+                                     BackgroundColor="#80FFFFFF"
+                                     Padding="35"
+                                     AbsoluteLayout.LayoutFlags="PositionProportional"
+                                     AbsoluteLayout.LayoutBounds="0.5, 0.5, AutoSize, AutoSize" />
+                        <Label Text="ราศีมีน" 
+                               HorizontalTextAlignment="Center" 
+                               VerticalTextAlignment="Center"
+                               TextColor="Black" 
+                               FontSize="16"
+                               FontAttributes="Bold"
+                               AbsoluteLayout.LayoutFlags="PositionProportional"
+                               AbsoluteLayout.LayoutBounds="0.5, 0.95, AutoSize, AutoSize" />
+                    </AbsoluteLayout>
+                </Grid>
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>

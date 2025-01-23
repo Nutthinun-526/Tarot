@@ -8,3 +8,9 @@ obj/Debug/net9.0-ios/iossimulator-x64/Test1.AssemblyInfo.cs
 /bin/Debug/net9.0-ios/iossimulator-x64
 /bin/Debug
 /obj
+bin/Debug/net9.0-android/com.companyname.test1-Signed.apk
+bin/Debug/net9.0-android/com.companyname.test1-Signed.apk
+/bin
+bin/Debug/net9.0-android/com.companyname.test1-Signed.apk
+bin/Debug/net9.0-android/com.companyname.test1-Signed.apk.idsig
+bin/Debug/net9.0-android/com.companyname.test1.apk
